@@ -2,32 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>StudyEdu - Protected</title>
-  <script>
-    function checkPassword() {
-      const password = document.getElementById("password").value;
-      if (password === "amanraj@64") {  // CHANGE this password to what you want
-        document.getElementById("protectedContent").style.display = "block";
-        document.getElementById("loginBox").style.display = "none";
-      } else {
-        alert("Incorrect password. Try again!");
-      }
-    }
-  </script>
+  <title>StudyEdu</title>
 </head>
 <body>
-  <div id="loginBox">
-    <h2>Enter Password to Access StudyEdu</h2>
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="checkPassword()">Submit</button>
-  </div>
-
-  <div id="protectedContent" style="display: none;">
-    <h1>Welcome to StudyEdu</h1>
-    <p><a href="math.pdf">Math PDF</a></p>
-    <p><a href="science.pdf">Science PDF</a></p>
-    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Sample Video</a></p>
-    <!-- Add more links here -->
-  </div>
+  <h1>Welcome to StudyEdu</h1>
+  <p>Manage your content <a href="/admin">here</a>.</p>
+  <!-- Your public content or homepage -->
 </body>
 </html>
