@@ -1,17 +1,6 @@
 backend:
-  name: git-gateway
+  name: auth0
   branch: main
-
-media_folder: "uploads"
-public_folder: "/uploads"
-
-collections:
-  - name: "resources"
-    label: "Resources"
-    folder: "content/resources"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "category", label: "Category", widget: "select", options: ["Math", "Science", "English", "Hindi", "S.St"] }
-      - { name: "link", label: "Video or PDF Link", widget: "string" }
+  auth0:
+    domain: dev-uwnuy0iejoajr7q1.us.auth0.com
+    client_id: 3NNKwQOTILQsdjeHksJv5sTKYoc12gZL
